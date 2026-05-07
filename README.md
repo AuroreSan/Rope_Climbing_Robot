@@ -38,7 +38,8 @@ Print the following STL files (without circuit cover):
 - **Passive Buzzer** 
 - **Microcontroller:** Arduino nano 
 - **Fuse:** L-12 Fuse Lamp 8V 250mA light Bulb or 10mA Fuse 
-- **Switch:** 2 Push bottoms that can change the task of robot 
+- **Switch:** 2 Push bottoms that can change the task of robot
+- **Sensor** Time-of-Flight (ToF) Laser Ranging Sensor
 
 
 *See the BOM (Bill of Materials) file for complete electronic components and specifications and link to the UK components*
