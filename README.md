@@ -31,7 +31,7 @@ Print the following STL files (without circuit cover):
 - **2x** M4 Screw (70 mm) - Front 2 and Back 2 body connections
 
 #### Motors and Electronics
-- **Motor:** 12V 107 RPM
+- **Motor:** 12V 107 RPM or 12V 200RPM
 - **Motor Driver:** BTS7960 H-Bridge Motor Driver
 - **Battery:** 12V 2400mAh NI-MH Rechargeable Battery with KET 2P Connection
 - **LED:** 2 x (Red, Green) 
