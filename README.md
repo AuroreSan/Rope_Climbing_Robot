@@ -14,18 +14,16 @@ Print the following STL files (without circuit cover):
 
 | Component | Quantity | Infill |
 |-----------|----------|--------|
-| Back Body 1 Motor Placement | 1 | 10% |
-| Front Body 1 Motor Placement | 1 | 10% |
-| Front Body 2 Groove Wheel | 1 | 10% |
-| Back Body 2 Groove Wheel | 1 | 10% |
+| Back Body 1 Motor Placement | 1 | 15% |
+| Front Body 1 Motor Placement | 1 | 15% |
+| Front Body 2 Groove Wheel | 1 | 15% |
+| Back Body 2 Groove Wheel | 1 | 15% |
 | Motorised Pulley Wheel | 1 | 10% |
 | Top Flat | 1 | 10% |
 | Groove Wheel | 2 | 10% |
+| M3 Body Pin Longer | 8 | 15% |
+| Motor extension V3 | 8 | 25% |
 
-### Hardware Components
-
-#### M3 Body Pins
-- **8x** M3 Body Pin (longer variant)
 
 #### Screws and Fasteners
 - **2x** M3 Screw (10-20 mm) - Body assembly
@@ -35,30 +33,33 @@ Print the following STL files (without circuit cover):
 #### Motors and Electronics
 - **Motor:** 12V 107 RPM
 - **Motor Driver:** BTS7960 H-Bridge Motor Driver
+- **Battery:** 12V 2400mAh NI-MH Rechargeable Battery with KET 2P Connection
+- **LED:** 2 x (Red, Green) 
+- **Passive Buzzer** 
+- **Microcontroller:** Arduino nano 
+- **Fuse:** L-12 Fuse Lamp 8V 250mA light Bulb or 10mA Fuse 
+- **Switch:** 2 Push bottoms that can change the task of robot 
 
-*See the BOM (Bill of Materials) file for complete electronic components and specifications.*
+
+*See the BOM (Bill of Materials) file for complete electronic components and specifications and link to the UK components*
 
 ## Assembly Steps
 
 1. **Prepare 3D Printed Parts**
-   - Ensure all printed components are cleaned and deburred
+   - Ensure all printed components are clean
    - Verify proper fit of all mating surfaces
 
 2. **Body Assembly**
-   - Connect Back Body 1 and Back Body 2 using the M3 body pins
-   - Connect Front Body 1 and Front Body 2 using the M3 body pins
+   - Connect Front body 1 and Back body 1 using M3 screw of 20mm length 
+   - Connect Front Body 2 and Back Body 2 using the M4 (50mm/70mm length). Make sure to put 2 big groove wheel in Body 2 before adding the scews. 
 
-3. **Copper Pipe Connection**
-   - Position the two body halves on the copper pipe
-   - Secure using 4x M3 50mm screws with nuts
-
-4. **Cross Body Connection**
-   - Connect front and back body sections using 2x M4 70mm screws
+3. **Cross Body Connection**
+   - Connect front and back body sections using 4x M4 70mm screws
 
 5. **Motor and Pulley Assembly**
-   - Mount the 12V 107 RPM motor
-   - Install the motorised pulley wheel
-   - Install groove wheels for rope tension and grip
+   - Mount the 12V 107 RPM motor on back Body 1. 
+   - Install the motorised pulley wheel with the motor extension V3 inside
+   - Cover all the wheels with non-slip mat cut off for better grip
 
 6. **Electronics Integration**
    - Install BTS7960 H-Bridge Motor Driver
@@ -74,7 +75,6 @@ Refer to the BOM document for a complete list of all electronic components and s
 - **Lightweight Construction:** 3D-printed PLA/PETG components reduce overall weight
 - **Modular Assembly:** Separate front and back body sections allow for easy maintenance and customization
 - **Efficient Drive System:** Motorised pulley with groove wheels for secure rope grip
-- **H-Bridge Control:** Precise motor speed and direction control via BTS7960 driver
 
 ## Project Structure
 
@@ -90,7 +90,7 @@ Rope_Climbing_Robot/
 ## Getting Started
 
 1. Review and prepare all STL files for 3D printing
-2. Print components with recommended 10% infill
+2. Print components 
 3. Gather all hardware components listed in the BOM
 4. Follow the assembly steps sequentially
 5. Test motor operation before full deployment on rope
